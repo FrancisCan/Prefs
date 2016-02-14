@@ -48,7 +48,7 @@ new Prefs("MyCustomName").init();
 ```
 
 ## Put / Get
-Integer, Float, Double, String, Boolean
+Integer, Float, Double, Long, String, Boolean
 
 ```java
 
@@ -74,7 +74,7 @@ float f = Prefs.getFloat("key", 0f);
 
 double d = Prefs.getDouble("key", 0d);
 
-long d = Prefs.getLong("key", 0l);
+long l = Prefs.getLong("key", 0l);
 
 boolean b = Prefs.getBoolean("key", 0d);
 
