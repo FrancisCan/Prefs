@@ -33,6 +33,10 @@ dependencies {
     </dependency>
 </dependencies>
 ```
+
+###  Download JAR
+[Release 1.0](https://github.com/FrancisCan/Prefs/releases)
+
 ## Init
 Initialize Prefs on start
 ```java
