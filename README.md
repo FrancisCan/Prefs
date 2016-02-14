@@ -12,7 +12,7 @@ allprojects {
     }
 }
 dependencies {
-    compile 'com.github.FrancisCan:Prefs:1.0'
+    compile 'com.github.FrancisCan:Prefs:1.0.1'
 }
 ```
 
@@ -28,14 +28,14 @@ dependencies {
 <dependencies>
     <dependency>
         <groupId>com.github.FrancisCan</groupId>
-        <artifactId>Prefs</artifactId>  
-        <version>1.0</version>
+        <artifactId>Prefs</artifactId>
+        <version>1.0.1</version>
     </dependency>
 </dependencies>
 ```
 
 ###  Download JAR
-[Release 1.0](https://github.com/FrancisCan/Prefs/releases)
+[Release 1.0.1](https://github.com/FrancisCan/Prefs/releases)
 
 ## Init
 Initialize Prefs on start
@@ -60,6 +60,8 @@ Prefs.putFloat("key", 10f);
 
 Prefs.putDouble("key", 10d);
 
+Prefs.putLong("key", 10l);
+
 Prefs.putBoolean("key", true);
 
 Prefs.putString("key", "Test");
@@ -71,6 +73,8 @@ int i = Prefs.getInt("key", 0);
 float f = Prefs.getFloat("key", 0f);
 
 double d = Prefs.getDouble("key", 0d);
+
+long d = Prefs.getLong("key", 0l);
 
 boolean b = Prefs.getBoolean("key", 0d);
 

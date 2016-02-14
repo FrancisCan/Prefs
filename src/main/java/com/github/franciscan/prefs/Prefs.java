@@ -5,6 +5,7 @@ import org.json.JSONObject;
 
 import java.io.*;
 import java.util.Iterator;
+import java.util.prefs.Preferences;
 
 /**
  * The MIT License (MIT)
@@ -34,6 +35,7 @@ public class Prefs {
     public final static String BOOLEANS = "booleans";
     public final static String FLOATS = "floats";
     public final static String DOUBLES = "doubles";
+    public final static String LONGS = "longs";
     public final static String OBJECTS = "objects";
 
     private static String resource;
@@ -44,8 +46,8 @@ public class Prefs {
     private static JSONObject booleans;
     private static JSONObject floats;
     private static JSONObject doubles;
+    private static JSONObject longs;
     private static JSONObject objects;
-
 
     /**
      * Init library
@@ -113,6 +115,7 @@ public class Prefs {
         booleans = ifNotExist(BOOLEANS);
         floats = ifNotExist(FLOATS);
         doubles = ifNotExist(DOUBLES);
+        longs = ifNotExist(LONGS);
         objects = ifNotExist(OBJECTS);
     }
 
@@ -191,6 +194,17 @@ public class Prefs {
      */
     public static <T extends Double> void putDouble(String key, T value) {
         doubles.put(key, value);
+        updateMemory();
+    }
+
+    /**
+     * Save Long Value
+     *
+     * @param key   of value
+     * @param value to store
+     */
+    public static <T extends Long> void putLong(String key, T value) {
+        longs.put(key, value);
         updateMemory();
     }
 
@@ -306,6 +320,16 @@ public class Prefs {
      */
     public static Double getDouble(String key, Double defaultValue) {
         return defaultIfNull(doubles, key, defaultValue);
+    }
+
+    /**
+     * Get Long Value
+     *
+     * @param key          of value
+     * @param defaultValue if absent
+     */
+    public static Long getLong(String key, Long defaultValue) {
+        return defaultIfNull(longs, key, defaultValue);
     }
 
     /**
