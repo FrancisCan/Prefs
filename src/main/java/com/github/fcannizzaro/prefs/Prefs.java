@@ -1,11 +1,10 @@
-package com.github.franciscan.prefs;
+package com.github.fcannizzaro.prefs;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.*;
 import java.util.Iterator;
-import java.util.prefs.Preferences;
 
 /**
  * The MIT License (MIT)

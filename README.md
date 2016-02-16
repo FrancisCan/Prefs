@@ -1,7 +1,8 @@
 # Prefs
 Simple Java Preferences (**JSON based**) with static access!
 
-[![](https://jitpack.io/v/FrancisCan/Prefs.svg)](https://jitpack.io/#FrancisCan/Prefs)
+[![](https://jitpack.io/v/fcannizzaro/prefs.svg)](https://jitpack.io/#fcannizzaro/prefs)
+[![Build Status](https://travis-ci.org/fcannizzaro/prefs.svg?branch=master)](https://travis-ci.org/fcannizzaro/prefs)
 
 ## Get it!
 ### Gradle
@@ -12,7 +13,7 @@ allprojects {
     }
 }
 dependencies {
-    compile 'com.github.FrancisCan:Prefs:1.0.1'
+    compile 'com.github.fcannizzaro:prefs:1.0.2'
 }
 ```
 
@@ -27,9 +28,9 @@ dependencies {
 
 <dependencies>
     <dependency>
-        <groupId>com.github.FrancisCan</groupId>
-        <artifactId>Prefs</artifactId>
-        <version>1.0.1</version>
+        <groupId>com.github.fcannizzaro</groupId>
+        <artifactId>prefs</artifactId>
+        <version>1.0.2</version>
     </dependency>
 </dependencies>
 ```

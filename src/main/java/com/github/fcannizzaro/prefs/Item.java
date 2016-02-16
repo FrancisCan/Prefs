@@ -1,4 +1,4 @@
-package com.github.franciscan.prefs;
+package com.github.fcannizzaro.prefs;
 /**
  * @author Francesco Cannizzaro
  */
